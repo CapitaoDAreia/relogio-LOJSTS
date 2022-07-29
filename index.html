@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./style/relogio.css">
+</head>
+<body onload="clock()">
+    <div class="tudo">
+        <section>
+            <nav>
+                <ul>
+                    <li id="clock" >Clock</li>
+                    <li id="timer">Timer</li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section>
+            <div>
+                <div id="display-hour"></div>
+                <div id="display-timer">00:00:00</div>
+                <div class="timer-buttons timer-buttons-style">
+                    <input type="button" value="Run" id="run">
+                    <input type="button" value="Pause" id="pause">
+                    <input type="button" value="Stop" id="stop">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="message">
+                
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/message.js"></script>
+</html>
